@@ -1,0 +1,87 @@
+@startuml AFS_UseCase_Diagram
+
+title Assessment Feedback System (AFS) - Use Case Diagram
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Administrative\nStaff" as Admin
+actor "Academic\nLeader" as Leader
+actor "Lecturer" as Lecturer
+actor "Student" as Student
+
+rectangle "Assessment Feedback System" {
+  
+  ' Common use cases
+  usecase "Login Access" as UC1
+  usecase "User Registration" as UC2
+  usecase "Edit Personal Profile" as UC3
+  
+  ' Admin Staff use cases
+  usecase "Create/Update/Delete\nEnd Users" as UC4
+  usecase "Assign Lecturers to\nAcademic Leaders" as UC5
+  usecase "Define APU\nGrading System" as UC6
+  usecase "Create New Classes\nfor Modules" as UC7
+  
+  ' Academic Leader use cases
+  usecase "Create/Update/Delete\nModule Profiles" as UC8
+  usecase "Assign Lecturers\nto Modules" as UC9
+  usecase "View Analyzed\nReports" as UC10
+  
+  ' Lecturer use cases
+  usecase "Design Assessment\nTypes" as UC11
+  usecase "Key-in Assessment\nMarks" as UC12
+  usecase "Provide Feedback\nfor Assessments" as UC13
+  
+  ' Student use cases
+  usecase "Register for\nClasses" as UC14
+  usecase "Check Individual\nResults" as UC15
+  usecase "Provide Comments\nfor Lecturers" as UC16
+  
+  ' System use cases
+  usecase "Grading System" as UC17
+  usecase "Generate Feedback\nReports" as UC18
+  usecase "Manage Data in\nText Files" as UC19
+  
+}
+
+' Admin Staff associations
+Admin --> UC1
+Admin --> UC4
+Admin --> UC5
+Admin --> UC6
+Admin --> UC7
+
+' Academic Leader associations
+Leader --> UC1
+Leader --> UC3
+Leader --> UC8
+Leader --> UC9
+Leader --> UC10
+
+' Lecturer associations
+Lecturer --> UC1
+Lecturer --> UC3
+Lecturer --> UC11
+Lecturer --> UC12
+Lecturer --> UC13
+
+' Student associations
+Student --> UC1
+Student --> UC2
+Student --> UC3
+Student --> UC14
+Student --> UC15
+Student --> UC16
+
+' Include relationships
+UC4 ..> UC19 : <<include>>
+UC8 ..> UC19 : <<include>>
+UC12 ..> UC17 : <<include>>
+UC13 ..> UC18 : <<include>>
+UC10 ..> UC18 : <<include>>
+
+' Extend relationships
+UC15 ..> UC16 : <<extend>>
+
+@enduml
