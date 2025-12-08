@@ -2,14 +2,10 @@ package domain.user;
 
 import domain.academic.Classes;
 import domain.academic.Result;
-import domain.academic.Comment;
 
 import java.util.List;
-import java.util.Scanner;
 
 public class Student extends User {
-    private Lecturer lecturer;
-
     private List<Classes> registeredClasses;
     private List<Result> results;
 

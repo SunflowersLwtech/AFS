@@ -1,6 +1,8 @@
-package dashboard;
+package gui.dashboard;
 
-public class LecturerDashboard {
+import javax.swing.*;
+
+public class LecturerDashboard extends JFrame {
     
 
     public static void main(String[] args) {

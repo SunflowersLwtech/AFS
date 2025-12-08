@@ -1,0 +1,55 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iml
+
+# IDE - VS Code
+.vscode/
+
+# IDE - Eclipse
+.project
+.classpath
+.settings/
+
+# IDE - NetBeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Compiled Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Build directories
+out/
+build/
+target/
+bin/
+
+# Logs
+*.log
+logs/
+
+# Backup files
+*.bak
+*.backup
+data/backup/*.txt
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Package files
+*.zip
+*.tar.gz
+*.rar

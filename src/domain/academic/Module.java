@@ -1,8 +1,5 @@
 package domain.academic;
 
-import domain.user.AcademicLeader;
-import domain.user.Lecturer;
-
 public class Module {
     private String moduleId;
     private String moduleName;
@@ -44,6 +41,12 @@ public class Module {
     public void setCreatedBy(String newCreatedBy) { this.createdBy = newCreatedBy; }
     public void setHandledBy(String newHandledBy) { this.handledBy = newHandledBy; }
 
+    public String getModuleInfo() {
+        return "Module: " + moduleName + " (" + moduleCode + ") - " + moduleDescription;
+    }
 
-    
+    public boolean updateModule(String updatedInfo) {
+        // TODO: Parse updatedInfo and update relevant fields
+        return true;
+    }
 }

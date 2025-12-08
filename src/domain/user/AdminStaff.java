@@ -1,10 +1,7 @@
 package domain.user;
 
 import domain.academic.Classes;
-import domain.academic.Module;
 import domain.academic.GradingSystem;
-
-import java.util.Scanner;
 
 public class AdminStaff extends User {
     private GradingSystem gradingSystem;

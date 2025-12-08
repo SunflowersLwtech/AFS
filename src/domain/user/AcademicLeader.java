@@ -1,10 +1,8 @@
 package domain.user;
 
 import domain.academic.Module;
-import domain.academic.Report;
 
 import java.util.List;
-import java.util.Scanner;
 
 public class AcademicLeader extends User {
     private String academicLeaderId;
@@ -29,13 +27,29 @@ public class AcademicLeader extends User {
     public void setDepartment(String newDepartment) { this.department = newDepartment; }
 
 
-    public boolean assignLecturerToModule() {
-        Module module;
+    public boolean assignLecturerToModule(String lecturerId, String moduleId) {
+        // TODO: Implement lecturer to module assignment logic
         return true;
     }
 
+    public Module createModule(String moduleName, String moduleCode, String moduleDescription, int creditHours) {
+        // TODO: Implement module creation logic
+        return null;
+    }
 
-    public void analyzeReports() {}
+    public boolean updateModule(String moduleId, String updatedInfo) {
+        // TODO: Implement module update logic
+        return true;
+    }
+
+    public boolean deleteModule(String moduleId) {
+        // TODO: Implement module deletion logic
+        return true;
+    }
+
+    public void analyzeReports() {
+        // TODO: Implement report analysis logic
+    }
 
     public List<Lecturer> getAssignedLecturers() {
         return assignedLecturers;

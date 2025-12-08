@@ -1,7 +1,5 @@
 package domain.user;
 
-import java.util.Objects;
-
 /*
  * Parent Class to all the roles
 */
@@ -57,7 +55,10 @@ public abstract class User {
     public Role getRole() { return role; }
     public String getEmail() { return email; }
     public String getContactNumber() { return contactNumber; }
+    public String getPassword() { return password; }
 
+    public void setUserId(String userId) { this.userId = userId; }
+    public void setName(String name) { this.name = name; }
     public void setEmail(String newEmail) { this.email = newEmail; }
     public void setContactNumber(String newContactNumber) { this.contactNumber = newContactNumber; }
     public void setRole(Role role) { this.role = role; }

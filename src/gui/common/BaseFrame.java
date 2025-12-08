@@ -1,6 +1,8 @@
-package common;
+package gui.common;
 
-public class BaseFrame {
+import javax.swing.*;
+
+public class BaseFrame extends JFrame {
     
 
     public static void main(String[] args) {

@@ -1,7 +1,5 @@
 package domain.academic;
 
-import domain.user.Lecturer;
-
 import java.time.LocalDate;
 
 public class Assessment {
@@ -28,7 +26,7 @@ public class Assessment {
         this.maxMarks = maxMarks;
         this.weightage = weightage;
         this.moduleId = moduleId;
-        this.dueDate = LocalDate.now();
+        this.dueDate = dueDate;
         this.createdBy = createdBy;
     }
 
@@ -37,7 +35,8 @@ public class Assessment {
     public String getAssessmentName() { return assessmentName; }
     public String getAssessmentType() { return assessmentType; }
     public double getMaxMarks() { return maxMarks; }
-    public double getWeightage() {return weightage; }
+    public double getWeightage() { return weightage; }
+    public String getModuleId() { return moduleId; }
     public LocalDate getDueDate() { return dueDate; }
     public String getCreator() { return createdBy; }
 

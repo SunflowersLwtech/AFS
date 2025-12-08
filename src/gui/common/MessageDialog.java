@@ -1,4 +1,6 @@
-package common;
+package gui.common;
+
+import javax.swing.*;
 
 public class MessageDialog {
     

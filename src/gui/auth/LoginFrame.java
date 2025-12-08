@@ -1,6 +1,8 @@
-package auth;
+package gui.auth;
 
-public class LoginFrame {
+import javax.swing.*;
+
+public class LoginFrame extends JFrame {
     
 
     public static void main(String[] args) {
